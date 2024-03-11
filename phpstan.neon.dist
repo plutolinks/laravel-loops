@@ -1,0 +1,15 @@
+includes:
+  - vendor/spaze/phpstan-disallowed-calls/disallowed-dangerous-calls.neon
+  - vendor/spaze/phpstan-disallowed-calls/disallowed-execution-calls.neon
+  - vendor/spaze/phpstan-disallowed-calls/disallowed-insecure-calls.neon
+  - vendor/spaze/phpstan-disallowed-calls/disallowed-loose-calls.neon
+
+parameters:
+  checkBenevolentUnionTypes: true
+  checkMissingIterableValueType: false
+  checkModelProperties: true
+  checkOctaneCompatibility: true
+  level: max
+
+  paths:
+    - src
